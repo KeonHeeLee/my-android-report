@@ -1,0 +1,47 @@
+create database TermProject DEFAULT CHARACTER SET utf8 collate utf8_general_ci;
+
+use TermProject;
+
+set names utf8;
+
+create table heros ( 
+name varchar(30),
+damage int(3),
+shield int(3),
+level int(2),
+skillname varchar(50),
+image varchar(250),
+info varchar(500)
+) ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+set names euckr;
+
+insert into heros values ("겐지",28,200,30,"용신의 검","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13630679362.png","짧은 시간 동안 검을 뽑습니다. 겐지의 검은 근접한 대상에게 치명적인 피해를 줍니다.");
+insert into heros values ("둠피스트",66,250,45,"파멸의 일격","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13496162889.png","하늘로 솟구친 후 떨어지면서 강한 일격을 날립니다. 넓은 범위에 엄청난 피해를 줍니다.");
+insert into heros values ("리퍼",160,250,40,"죽음의 꽃","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12881694894.png","양손에 든 헬파이어 샷건을 눈에 보이지도 않을 엄청난 속도로 난사해 주위 모든 적에게 막대한 피해를 줍니다.");
+insert into heros values ("맥크리",70,200,37,"황야의 무법자","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12559124404.png","집중, 조준, 그리고 발사. 맥크리가 정신을 집중하여 조준한 후 방아쇠를 당겨 시야의 모든 적들에게 총을 발사합니다. 약한 적부터 치명상을 입습니다.");
+insert into heros values ("솔저76",19,200,44,"전술 조준경","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12033597561.png","초정밀 표적 조준경이 조준선과 가장 가까운 적을 자동으로 포착합니다. 만약 적이 시야에서 벗어나면 빠르게 다음 적을 대상으로 설정합니다.");
+insert into heros values ("솜브라",8,200,30,"EMP","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i10815214457.png","솜브라가 넓은 반경에 전자기 에너지를 방출하여 반경 내 적의 방벽과 보호막을 파괴하고 모든 적을 해킹합니다.");
+insert into heros values ("트레이서",6,150,26,"펄스 폭탄","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i11549213339.png","트레이서가 사물의 표면이나 상대편에게 부착되는 거대한 폭탄을 던집니다. 잠시 후에 폭탄은 폭발하고 폭발 범위 안에 있는 모든 적들에게 큰 피해를 줍니다.");
+insert into heros values ("파라",120,200,32,"포화","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13362623205.png","초소형 로켓을 연속으로 발사하여 적들을 공격합니다.");
+
+insert into heros values ("메이",75,250,31,"눈보라","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12027435323.png","기후 조절 드론을 출동시켜 넓은 범위에 돌풍과 눈보라를 내뿜게 합니다. 눈보라의 범위 안에 들어온 적은 이동 속도가 감소하고 피해를 받으며, 눈보라 속에 너무 오래 머물면 꽁꽁 얼어붙습니다.");
+insert into heros values ("바스티온",20,250,30,"설정:전차","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i11585266338.png","전차 모드에서는 무한궤도와 원거리 포를 탑재합니다. 포탄으로 넓은 범위 안의 적들을 섬멸할 수 있지만, 제한된 시간 동안만 이 모드를 유지할 수 있습니다.");
+insert into heros values ("위도우메이커",120,200,33,"적외선 투시","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12313100104.png","정찰 보안경을 통해 일정 시간 동안 벽과 장애물 너머에 있는 대상의 열 신호를 감지합니다. 이 시야는 아군과 공유됩니다.");
+insert into heros values ("정크렛",120,200,25,"죽이는 타이어","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13682439692.png","동력을 갖춘 타이어 폭탄을 가동시키고 전장을 향해 굴립니다. 이 타이어 폭탄은 벽이나 장애물을 타고 오를 수 있습니다. 죽이는 타이어는 직접 격발시키거나 일정 시간이 지나면 폭발하고, 폭발에 휘말린 적들에게 엄청난 피해를 줍니다.");
+insert into heros values ("토르비욘",150,200,57,"초고열 용광로","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12999139300.png","토르비욘이 휴대용 용광로를 과부화시켜 엄청난 양의 방어력을 얻습니다. 또한 공격 속도, 포탑 건설 및 수리 속도가 평소보다 월등하게 빨라집니다.");
+insert into heros values ("한조",125,200,38,"용의 일격","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i11996547101.png","용의 영혼을 일직선으로 내보내, 마주치는 적을 모두 삼키게 합니다. 영혼은 벽을 통과할 수 있습니다.");
+
+insert into heros values ("라인하르트",75,500,61,"대지분쇄","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12644178777.png","로켓 해머로 강하게 땅을 내리쳐, 전방의 모든 적을 넘어뜨리고 피해를 줍니다.");
+insert into heros values ("로드호그",150,200,48,"돼재앙","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13790341021.png","고철총에 깔때기를 꽂고 고철을 부은 다음, 적들을 밀쳐내는 고철 파편을 일정 시간 동안 퍼붓습니다.");
+insert into heros values ("오리사",10,400,1,"초강력 증폭기","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i15614163492.png","오리사가 시야 안에 있는 모든 아군의 공격력을 증폭시킵니다.");
+insert into heros values ("윈스턴",60,500,29,"원시의 분노","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12493142255.png","동물의 본성을 받아들여 엄청난 생명력을 얻고 쉽게 죽지 않는 상태가 됩니다. 근접 공격이 강화되고, 점프 팩을 더 자주 사용할 수 있게 됩니다. 분노한 동안 윈스턴은 근접 공격 및 점프 팩 공격만을 할 수 있습니다.");
+insert into heros values ("자리야",95,400,28,"중력자탄","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12518901335.png","중력 폭탄을 발사하여 적들을 끌어당기고, 끌려들어간 적들에게 피해를 줍니다.");
+insert into heros values ("D.VA",22,600,19,"자폭","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i10447836177.png","로봇에서 탈출하며 로봇 안의 원자로를 폭파시켜, 주위의 적에게 엄청난 피해를 줍니다.");
+
+insert into heros values ("루시우",20,200,26,"소리방벽","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i14065234158.png","루시우의 음파 증폭기에서 보호의 물결이 방출되어 자신과 근처 아군에게 일시적으로 보호막을 씌웁니다.");
+insert into heros values ("메르시",20,200,37,"발키리","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i11230721716.png","발키리가 메르시의 발키리 슈트의 출력을 최대로 해방하여 메르시의 능력을 20초간 강화합니다.");
+insert into heros values ("모이라",50,200,48,"융화","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i16515608630.png","모이라가 정신을 집중하며 광선을 쏩니다. 광선은 아군을 치유하고 방벽을 통과해서 적에게 피해를 줍니다.");
+insert into heros values ("시메트라",120,200,38,"순간이동기","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12518302465.png","시메트라가 현재 위치에 순간이동기 출구를 설치합니다. 출구는 팀 시작 위치에 있는 순간이동기 입구와 연결됩니다. 아군은 순간이동기 입구에서 출구로 즉시 이동하여 전장에 빠르게 합류할 수 있습니다.");
+insert into heros values ("아나",70,200,60,"나노강화제","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i12042609851.png","아군 한 명에게 전투 강화제를 투여하여 일시적으로 이동 속도와 공격력을 증가시키고 받는 피해를 감소시킵니다.");
+insert into heros values ("젠야타",46,200,20,"초월","http://static.inven.co.kr/image_2011/site_image/overwatch/dataninfo/hero/heroicon/i13055871269.png","잠시 동안 현세를 초월한 존재가 됩니다. 이 시간 동안 모든 피해에 면역이 되며 자동으로 자신 및 주위 아군의 생명력을 회복시키지만, 다른 능력이나 무기는 사용할 수 없습니다.");
